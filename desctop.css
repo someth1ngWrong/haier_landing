@@ -1,0 +1,187 @@
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 82px;
+    line-height: 82px;
+  }
+
+  p {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .caption {
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 564px;
+  }
+
+  .startSection p {
+    margin-top: 32px;
+}
+
+  form {
+    display: flex;
+    align-items: baseline;
+    width: 564px;
+  }
+
+  button {
+    margin-left: 8px;
+    width: 380px;
+  }
+
+  .header .contentBox {
+      padding: 0 3vw;
+  }
+
+  .input {
+    margin-top: 56px;
+  }
+
+
+  .iphone {
+    margin-top: 130px;
+    transform: scale(1.3);
+}
+
+.mechanicSection {
+  flex-direction: row;
+  margin-top: 150px;
+  gap: 20px;
+}
+
+.mechanicSectionCardOne,
+.mechanicSectionCardTwo {
+  width: 50%;
+
+}
+
+.advantageSection {
+  padding: 0 3vw;
+}
+
+.desctopBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+
+
+
+.advantageSection .box {
+  /* background-color: var(--color-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 20px; */
+  margin-top: 20px;
+  padding: 40px;
+  align-items: unset !important;
+}
+
+.advantageSection .box img {
+  margin: auto;
+  width: unset !important;
+  max-width: 80%;
+}
+
+
+
+
+.advantageSection h2 {
+  margin-bottom: 32px;
+}
+
+.advantageSection_img1 {
+  margin-top: 30px;
+}
+.advantageSection_img3 {
+  max-width: 50% !important;
+  margin-top: 10px !important;
+}
+
+.howItWorksSection {
+  margin-top: 110px;
+  padding: 0 3vw;
+  gap: 20px;
+}
+
+.howItWorksSection .box {
+  flex-direction: row;
+  align-items: stretch;
+  padding: 40px;
+}
+
+.howItWorksSection img {
+  max-width: 50%
+}
+
+.howItWorksSection div:nth-of-type(1) {
+    margin-top: unset !important;
+}
+
+.howItWorksSection div:nth-of-type(1) img,
+.howItWorksSection div:nth-of-type(2) img,
+.howItWorksSection div:nth-of-type(3) img {
+  height: unset !important;
+  width: unset !important;
+}
+
+.howItWorksSection div:nth-of-type(1) img {
+  margin-bottom: -40px;
+}
+.howItWorksSection div:nth-of-type(2) img {
+  margin-top: 30px;
+}
+
+.finalSection {
+  margin-top: 40px;
+  padding: 0 3vw;
+}
+
+.finalSection .box {
+  align-items: center;
+  justify-content: center;
+  height: 494px;
+}
+.finalSection h2 {
+  max-width: 1100px;
+  margin-top: unset !important;
+}
+.finalSection form {
+  margin-top: -32px;
+}
+
+.finalSection_img_Sasha {
+  top: -90px !important;
+  right: 29vw !important;
+}
+
+.finalSection_img_Alina {
+  top: 230px !important;
+  left: 3vw !important;
+}
+
+.finalSection_img_Tolya {
+  top: 166px !important;
+  left: 76vw !important;
+}
+
+.emojiBox {
+  width: -webkit-fill-available;
+}
+
+
+
+
+
+
+}
