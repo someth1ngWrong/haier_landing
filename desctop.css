@@ -55,12 +55,27 @@
   margin-top: 150px;
   gap: 20px;
 }
+.mechanicSection .box {
+  margin-top: 20px;
+}
 
 .mechanicSectionCardOne,
 .mechanicSectionCardTwo {
   width: 50%;
-
 }
+
+/* .mechanicSectionCardOne img {
+
+} */
+.mechanicSectionCardOne img,
+.mechanicSectionCardTwo img {
+  width: 100%;
+  /* height: max-content; */
+}
+
+
+
+
 
 .advantageSection {
   padding: 0 3vw;
@@ -91,6 +106,8 @@
   margin: auto;
   width: unset !important;
   max-width: 80%;
+  /* width: 100%;
+  height: intrinsic; */
 }
 
 
@@ -177,6 +194,14 @@
 
 .emojiBox {
   width: -webkit-fill-available;
+}
+
+.finalSection_contacts .box2:nth-child(2) {
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+.finalSection_contacts .box2:nth-child(2) p {
+  font-size: 12px;
 }
 
 

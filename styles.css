@@ -14,6 +14,9 @@
 }
 
 /* TEXT STYLES */
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -294,7 +297,7 @@ form {
 
 
 
-.mechanicSectionCardOne .box {
+.mechanicSection .box {
   /* position: relative; */
   /* height: 200px; */
   /* width: 351px; */
@@ -327,7 +330,7 @@ form {
   /* height: 100vw; */
   /* margin-bottom: -16px; */
   /* width: fit-content; */
-  max-width: 110%;
+  max-width: 100%;
 }
 
 
@@ -351,7 +354,7 @@ form {
   background-color: var(--color-blue);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   border-radius: 20px;
   padding: 24px;
@@ -359,7 +362,7 @@ form {
 }
 
 .advantageSection .box img {
-  margin-top: 8px;
+  margin: 8px auto;
   width: 303px;
 }
 
@@ -492,6 +495,7 @@ form {
   position: relative;
 }
 
+
 .finalSection .emojiBox img:nth-child(1) {
   position: absolute;
   width: 120px;
@@ -536,6 +540,12 @@ form {
   color: #C9CACB;
 }
 
+.finalSection .box2 a {
+  /* text-decoration: none; */
+  text-decoration: underline;
+  color: #C9CACB;
+}
+
 .finalSection_contacts .box2:nth-child(2) p:nth-child(2) {
   margin-top: 4px;
 }
@@ -555,10 +565,6 @@ form {
   height: 32px;
   background-color: var(--color-black);
 }
-
-
-
-
 
 
 
