@@ -541,7 +541,7 @@ form {
 }
 
 .finalSection .box2 a {
-  /* text-decoration: none; */
+  text-decoration: none;
   text-decoration: underline;
   color: #C9CACB;
 }
