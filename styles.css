@@ -543,7 +543,7 @@ form {
 .finalSection .box2 a {
   text-decoration: none;
   text-decoration: underline;
-  color: #C9CACB;
+  color: #C9CACB !important;
 }
 
 .finalSection_contacts .box2:nth-child(2) p:nth-child(2) {

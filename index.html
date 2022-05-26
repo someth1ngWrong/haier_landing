@@ -43,7 +43,7 @@
 
       <div class="contentBox">
         <img src="assets/img/logo.svg" alt="">
-        <a href="#BottomForm">Хочу узнать о запуске</a>
+        <a id="ButtonFormId" class="ButtonForm" href="#BottomForm" onclick="this.innerHTML = ('My new text!')">Хочу узнать о запуске</a>
       </div>
 
 
@@ -62,9 +62,9 @@
       <h1>Хайер — для любых задач</h1>
       <p class="caption">Помогаем студентам и&nbsp;студенткам из&nbsp;разных корпусов Вышки связаться друг с&nbsp;другом</p>
 
-      <form action="https://formcarry.com/s/Cjt0lO9aCis" method="POST" accept-charset="UTF-8">
-        <input class="input" placeholder="Email" type="email" name="email">
-        <button type="submit" name="button" id="button">Хочу узнать о запуске</button>
+      <form id="my-formcarry1">
+        <input id="InputFormId1" class="input" placeholder="Email" type="email" name="email">
+        <button id="ButtonFormId1" class="ButtonForm" type="submit" name="button">Хочу узнать о запуске</button>
       </form>
       <!-- <div class="input"></div> -->
       <div class="iphone">
@@ -141,7 +141,7 @@
 
     </div>
 
-    <div id="BottomForm" class="finalSection">
+    <div class="finalSection">
       <div class="box">
         <div class="emojiBox">
           <img class="finalSection_img_Sasha" src="assets/img/final_emoji_sasha.png" alt="">
@@ -150,12 +150,11 @@
         </div>
         <h2>Скоро запуск! Оставь почту, чтобы раньше других узнать об&nbsp;этом!</h2>
 
-        <form  action="https://formcarry.com/s/Cjt0lO9aCis" method="POST" accept-charset="UTF-8">
-          <input class="input" placeholder="Email" type="email" name="email">
-          <input type="hidden" name="_next" value="https://haierapp.ru/">
-
-          <button type="submit" name="button" id="button">Хочу узнать о запуске</button>
+        <form id="my-formcarry2">
+          <input id="InputFormId2" class="input" placeholder="Email" type="email" name="email">
+          <button id="ButtonFormId2" class="ButtonForm" type="submit" name="button">Хочу узнать о запуске</button>
         </form>
+
       </div>
       <div class="finalSection_contacts">
         <div class="box2">
@@ -190,8 +189,17 @@
 
     <!-- <form id="my-formcarry">
       <input class="input" placeholder="Email" type="email" name="email">
-      <button type="submit" name="button" id="button">Хочу узнать о запуске</button>
-    </form>
+      <button type="submit" class="ButtonForm">Хочу узнать о запуске</button>
+    </form> -->
+
+    <!-- <script>
+      // const btn = document.getElementById('ButtonFormId2')
+      ButtonFormId2.onclick = function() {
+        this.innerHTML = "My new text!";
+      }
+    </script> -->
+
+
 
 
 
@@ -199,29 +207,37 @@
     <script>
       formcarry({
         form: "Cjt0lO9aCis",
-        // id or class name of the form element, only form element allowed
-        // works with css selectors
-        // # <= for id
-        // . <= for class
-        element: "#my-formcarry",
-        // Success callback, you can show alert messages
-        // or redirect the user in this function
-        onSuccess: function(response){
-          alert(response)
+        element: "#my-formcarry1",
+        onSuccess: function(ok){
+          InputFormId1.value='';
+          ButtonFormId1.style.backgroundColor='#2F2F2F';
+          ButtonFormId1.innerHTML = "Почта отправлена!";
+          console.log('ok!');
         },
-        // Error callback, a good place to show errors 🗿
-        onError: function(error){
-          // alert(error)
-            function () {
-              var a = document.getElementById('button');
-              a.onclick = function () {
-                 if (this.innerHTML=='Хочу узнать о запуске') this.innerHTML = 'Отправить еще раз?';
-              }
-            }
-          }
+        onError: function(error) {
+          ButtonFormId1.innerHTML = "Ошибка, попробуй еще раз";
+          console.log('error');
         }
       });
-    </script> -->
+
+    </script>
+    
+    <script>
+      formcarry({
+        form: "Cjt0lO9aCis",
+        element: "#my-formcarry2",
+        onSuccess: function(ok){
+          InputFormId2.value='';
+          ButtonFormId2.style.backgroundColor='#2F2F2F';
+          ButtonFormId2.innerHTML = "Почта отправлена!";
+          console.log('ok!');
+        },
+        onError: function(error) {
+          ButtonFormId2.innerHTML = "Ошибка, попробуй еще раз";
+          console.log('error');
+        }
+      });
+    </script>
 
 
 
