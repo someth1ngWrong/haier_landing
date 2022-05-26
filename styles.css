@@ -82,9 +82,10 @@ h2 {
 
 
 button {
- font-family: 'Suisse Intl Regular' !important;
+ font-family: 'Suisse Intl Regular', serif !important;
  font-size: 18px;
- /* text-decoration: none; */
+ font-weight: 400;
+ text-decoration: none;
 
  margin-top: 12px;
 
