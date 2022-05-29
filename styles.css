@@ -217,13 +217,38 @@ form {
   top: 145px;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 .startSection .iphone img:nth-child(2) {
   width: 144px;
   right: 10px;
-  animation-duration: 5s;
-  animation-name: nth-child2;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: nth-child2;
+          animation-name: nth-child2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes nth-child2 {
+    0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
 @keyframes nth-child2 {
@@ -244,12 +269,33 @@ form {
   width: 116px;
     top: 382px;
     left: 9px;
-    animation-duration: 4s;
-    animation-name: nth-child3;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform-origin: 60px 80px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-name: nth-child3;
+            animation-name: nth-child3;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-transform-origin: 60px 80px;
+        -ms-transform-origin: 60px 80px;
+            transform-origin: 60px 80px;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes nth-child3 {
+    0% {
+    top: 382px;
+  }
+
+  50% {
+    top: 402px;
+  }
+
+  100% {
+    top: 382px;
+  }
 }
 
 @keyframes nth-child3 {
@@ -270,30 +316,65 @@ form {
   top: 228px;
   right: 53px;
   width: 50px;
-  animation-duration: 8s;
-  animation-name: nth-child4;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: nth-child4;
+          animation-name: nth-child4;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes nth-child4 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  86% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  89% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  91% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes nth-child4 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   86% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   89% {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   91% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -301,30 +382,65 @@ form {
   top: 228px;
   right: 16px;
   width: 50px;
-  animation-duration: 8s;
-  animation-name: nth-child5;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: nth-child5;
+          animation-name: nth-child5;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes nth-child5 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  82% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  83% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes nth-child5 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   82% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   83% {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   85% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -332,30 +448,65 @@ form {
   top: 127px;
   left: 17px;
   width: 117px;
-  animation-duration: 5s;
-  animation-name: nth-child6;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: nth-child6;
+          animation-name: nth-child6;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes nth-child6 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  46% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  56% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes nth-child6 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   46% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   50% {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   56% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -363,33 +514,68 @@ form {
   width: 65px;
   top: 365px;
   right: 29px;
-  animation-duration: 20s;
-  animation-name: nth-child7;
-  animation-iteration-count: infinite;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-name: nth-child7;
+          animation-name: nth-child7;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   animation-direction: reverse;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes nth-child7 {
+@-webkit-keyframes nth-child7 {
     0% {
-    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
     top: 365px;
   }
 
     25% {
-    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
     top: 385px;
   }
 
     50% {
-    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
     top: 365px;
   }
 
 
 
   75% {
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes nth-child7 {
+    0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    top: 365px;
+  }
+
+    25% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    top: 385px;
+  }
+
+    50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    top: 365px;
+  }
+
+
+
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
@@ -397,34 +583,69 @@ form {
   width: 51px;
   top: 259px;
   left: 8px;
-  transform: rotate(-10deg);
-  animation-duration: 30s;
-  animation-name: nth-child8;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transform-origin: center;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: nth-child8;
+          animation-name: nth-child8;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
 }
 
-@keyframes nth-child8 {
+@-webkit-keyframes nth-child8 {
     0% {
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 
     25% {
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 
     50% {
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 
 
 
   75% {
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
+@keyframes nth-child8 {
+    0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+
+    25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+
+    50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+
+
+
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
 
 
 
