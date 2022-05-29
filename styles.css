@@ -148,6 +148,48 @@ button {
   justify-content: space-between;
 }
 
+.animoji_1_start {
+  animation-duration: 6s;
+  animation-name: animoji_1_start;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animoji_1_start {
+    0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.animoji_2_start {
+  animation-duration: 8s;
+  animation-name: animoji_2_start;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animoji_2_start {
+    0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 40px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
 /* ACTION SCREEN */
 
 .startSection {
@@ -647,6 +689,216 @@ form {
   }
 }
 
+/* ----------------------------- */
+/* .startSection .iphone img:nth-child(2) {
+  width: 144px;
+  right: 10px;
+  animation-duration: 5s;
+  animation-name: nth-child2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes nth-child2 {
+    0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.startSection .iphone img:nth-child(3) {
+  width: 116px;
+    top: 382px;
+    left: 9px;
+    animation-duration: 4s;
+    animation-name: nth-child3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 60px 80px;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes nth-child3 {
+    0% {
+    top: 382px;
+  }
+
+  50% {
+    top: 402px;
+  }
+
+  100% {
+    top: 382px;
+  }
+}
+
+.startSection .iphone img:nth-child(4) {
+  top: 228px;
+  right: 53px;
+  width: 50px;
+  animation-duration: 8s;
+  animation-name: nth-child4;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes nth-child4 {
+  0% {
+    transform: scale(1);
+  }
+  86% {
+    transform: scale(1);
+  }
+
+  89% {
+    transform: scale(0.8);
+  }
+  91% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.startSection .iphone img:nth-child(5) {
+  top: 228px;
+  right: 16px;
+  width: 50px;
+  animation-duration: 8s;
+  animation-name: nth-child5;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes nth-child5 {
+  0% {
+    transform: scale(1);
+  }
+  82% {
+    transform: scale(1);
+  }
+
+  83% {
+    transform: scale(0.8);
+  }
+  85% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.startSection .iphone img:nth-child(6) {
+  top: 127px;
+  left: 17px;
+  width: 117px;
+  animation-duration: 5s;
+  animation-name: nth-child6;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes nth-child6 {
+  0% {
+    transform: scale(1);
+  }
+  46% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+  56% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.startSection .iphone img:nth-child(7) {
+  width: 65px;
+  top: 365px;
+  right: 29px;
+  animation-duration: 20s;
+  animation-name: nth-child7;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes nth-child7 {
+    0% {
+    transform: rotate(5deg);
+    top: 365px;
+  }
+
+    25% {
+    transform: rotate(-5deg);
+    top: 385px;
+  }
+
+    50% {
+    transform: rotate(5deg);
+    top: 365px;
+  }
+
+
+
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.startSection .iphone img:nth-child(8) {
+  width: 51px;
+  top: 259px;
+  left: 8px;
+  transform: rotate(-10deg);
+  animation-duration: 30s;
+  animation-name: nth-child8;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: center;
+}
+
+@keyframes nth-child8 {
+    0% {
+    transform: rotate(-10deg);
+  }
+
+    25% {
+    transform: rotate(10deg);
+  }
+
+    50% {
+    transform: rotate(-10deg);
+  }
+
+
+
+  75% {
+    transform: rotate(10deg);
+  }
+} */
+
+/* ----------------------------- */
 
 
 /* MECHANIC */
