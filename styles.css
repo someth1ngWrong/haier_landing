@@ -1022,7 +1022,7 @@ form {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  /* gap: 8px; */
   align-items: stretch;
   padding: 0 14px;
 }
@@ -1176,7 +1176,39 @@ form {
 .finalSection .emojiBox img:nth-child(1) {
   position: absolute;
   width: 120px;
-  transform: rotate(352deg);
+  -webkit-transform: rotate(352deg);
+      -ms-transform: rotate(352deg);
+          transform: rotate(352deg);
+-webkit-animation-duration: 4s;
+        animation-duration: 4s;
+-webkit-animation-name: emojiBox1;
+        animation-name: emojiBox1;
+-webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+        animation-direction: alternate;
+-webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes emojiBox1 {
+0% {
+top: 0px;
+}
+
+100% {
+top: 20px;
+}
+}
+
+@keyframes emojiBox1 {
+0% {
+top: 0px;
+}
+
+100% {
+top: 20px;
+}
 }
 
 .finalSection .emojiBox img:nth-child(2) {
@@ -1184,8 +1216,40 @@ form {
   width: 128px;
   top: 250px;
   right: -20px;
-  transform: rotate(9.33deg);
-}
+  -webkit-transform: rotate(9.33deg);
+      -ms-transform: rotate(9.33deg);
+          transform: rotate(9.33deg);
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: emojiBox2;
+          animation-name: emojiBox2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes emojiBox2 {
+  0% {
+  top: 250px;
+  }
+
+  100% {
+  top: 230px;
+  }
+  }
+
+  @keyframes emojiBox2 {
+  0% {
+  top: 250px;
+  }
+
+  100% {
+  top: 230px;
+  }
+  }
 
 .finalSection .emojiBox img:nth-child(3) {
   position: absolute;
