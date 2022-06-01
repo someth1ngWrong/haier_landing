@@ -147,13 +147,13 @@ button {
   display: flex;
   justify-content: space-between;
 }
-
+/* 
 .animoji_1_start {
   animation-duration: 6s;
   animation-name: animoji_1_start;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
+} */
 
 
 
